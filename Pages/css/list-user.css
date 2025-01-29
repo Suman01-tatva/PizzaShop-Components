@@ -3,6 +3,10 @@
   width: 30px;
 }
 
+.table thead tr th {
+  color: gray;
+}
+
 .status-value {
   display: flex;
   justify-content: center;
