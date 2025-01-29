@@ -37,7 +37,21 @@
   padding: 10px 20px;
 }
 
-.add-btn {
+.fill-btn {
+  background-color: #006098;
+  color: white;
+}
+
+.border-btn {
+  border: 2px solid #006098;
+  background-color: white;
+  color: #006098;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.border-btn:hover {
+  border: 2px solid #006098;
   background-color: #006098;
   color: white;
 }
