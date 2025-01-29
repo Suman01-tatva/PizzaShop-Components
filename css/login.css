@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main-div {
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #d2eff6;
+}
+
+.pizza-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-icon {
+  height: 25px;
+  width: 25px;
+  background: transparent;
+  margin-left: -34px;
+}
+
+.pizza-logo {
+  height: 50px;
+  width: 60px;
+}
+
+.brand-name {
+  color: #4e7e9a;
+}
+
+a {
+  text-decoration: none;
+}
