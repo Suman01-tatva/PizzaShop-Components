@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9 mt-5">
+          <div class="d-flex align-items-center justify-content-between">
+            <h2 class="heading">Menu</h2>
+          </div>
+          <section class="row p-3 shadow">
+            <nav>
+              <div
+                class="nav nav-underline text-danger"
+                id="nav-tab"
+                role="tablist"
+              >
+                <button
+                  class="nav-link active"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  <div class="mx-3">
+                    <i class="fa-solid fa-bars" style="color: #265cba"></i>
+                    Items
+                  </div>
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  <div>
+                    <img src="./Assets/square-menu.png" alt="modifier-menu" />
+                    Modifiers
+                  </div>
+                </button>
+              </div>
+            </nav>
+          </section>
+          <div class="row border shadow rounded">
+            <section
+              class="col-md-3 col-lg-2 menu-section px-0 border-right rounded px-1 mt-2"
+            >
+              <div class="d-flex flex-wrap justify-content-between mt-3">
+                <h4 class="heading">Catagory</h4>
+                <button
+                  class="border-btn my-0 rounded shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa-solid fa-plus fa-sm"></i>
+                </button>
+              </div>
+              <ul class="mt-4 p-2 menu-catagory">
+                <li class="my-1">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <span class="mx-3">Sandwich</span>
+                </li>
+                <li class="my-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <span class="mx-3">Pizza</span>
+                </li>
+                <li class="my-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <span class="mx-3">Sides and Appetizers</span>
+                </li>
+                <li class="my-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <span class="mx-3">Salads</span>
+                </li>
+                <li class="my-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <span class="mx-3">Deserts</span>
+                </li>
+                <li class="my-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <span class="mx-3">Sides and Appetizers</span>
+                </li>
+                <li class="my-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <span class="mx-3">Salads</span>
+                </li>
+                <li class="my-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <span class="mx-3">Deserts</span>
+                </li>
+                <li class="my-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <span class="mx-3">Sides and Appetizers</span>
+                </li>
+                <li class="my-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <span class="mx-3">Salads</span>
+                </li>
+                <li class="my-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <span class="mx-3">Deserts</span>
+                </li>
+              </ul>
+            </section>
+            <section
+              class="col-md-9 col-lg-10 rounded p-3 shadow mt-2 table-responsive"
+            >
+              <h2 class="heading">Items</h2>
+              <div class="d-flex justify-content-end gap-2">
+                <div class="search-bar">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search..."
+                      aria-label="Search"
+                      aria-describedby="search-addon"
+                    />
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      id="search-addon"
+                    >
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <button class="border-1 outline-1 rounded py-1 px-2 bg-light">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+                <button class="border-0 p-1 px-2 fill-btn rounded shadow">
+                  <i class="fa-solid fa-plus"></i>
+                  New Item
+                </button>
+              </div>
+              <table class="table mt-3">
+                <thead>
+                  <tr class="tb-head">
+                    <th scope="col">
+                      <input type="checkbox" value="" id="" />
+                      <span class="mx-2">Name</span>
+                    </th>
+                    <th scope="col">Item Type</th>
+                    <th scope="col">Rate</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Available</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                      <!-- <div class="d-flex gap-2 align-items-center"> -->
+                      <img
+                        src="./Assets/dining-menu.png"
+                        alt="user profile img"
+                        class="dining-menu-img mx-2"
+                      />
+                      <span>Panjabi Tadka Sandwich</span>
+                      <!-- </div> -->
+                    </td>
+                    <td>
+                      <img
+                        src="./Assets/non-veg-icon.svg"
+                        alt="nonveg-icon"
+                        class="item-type"
+                      />
+                    </td>
+                    <td>200</td>
+                    <td>1</td>
+                    <td>
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckDefault"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-4 align-items-center">
+                        <div class="d-flex gap-4 align-items-center">
+                          <i class="fa-solid fa-pen-clip"></i>
+                          <button
+                            type="button"
+                            class="border-0 outline-0 bg-light p-0"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                          >
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                      <!-- <div class="d-flex gap-2 align-items-center"> -->
+                      <img
+                        src="./Assets/dining-menu.png"
+                        alt="user profile img"
+                        class="dining-menu-img mx-2"
+                      />
+                      <span>Chinies Sandwich</span>
+                      <!-- </div> -->
+                    </td>
+                    <td>
+                      <img
+                        src="./Assets/veg-icon.svg"
+                        alt="nonveg-icon"
+                        class="item-type"
+                      />
+                    </td>
+                    <td>100</td>
+                    <td>1</td>
+                    <td>
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckDefault"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-4 align-items-center">
+                        <div class="d-flex gap-4 align-items-center">
+                          <i class="fa-solid fa-pen-clip"></i>
+                          <button
+                            type="button"
+                            class="border-0 outline-0 bg-light p-0"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                          >
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                      <!-- <div class="d-flex gap-2 align-items-center"> -->
+                      <img
+                        src="./Assets/dining-menu.png"
+                        alt="user profile img"
+                        class="dining-menu-img mx-2"
+                      />
+                      <span>Chinies Sandwich</span>
+                      <!-- </div> -->
+                    </td>
+                    <td>
+                      <img
+                        src="./Assets/veg-icon.svg"
+                        alt="nonveg-icon"
+                        class="item-type"
+                      />
+                    </td>
+                    <td>100</td>
+                    <td>1</td>
+                    <td>
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckDefault"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-4 align-items-center">
+                        <div class="d-flex gap-4 align-items-center">
+                          <i class="fa-solid fa-pen-clip"></i>
+                          <button
+                            type="button"
+                            class="border-0 outline-0 bg-light p-0"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                          >
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                      <!-- <div class="d-flex gap-2 align-items-center"> -->
+                      <img
+                        src="./Assets/dining-menu.png"
+                        alt="user profile img"
+                        class="dining-menu-img mx-2"
+                      />
+                      <span>Chinies Sandwich</span>
+                      <!-- </div> -->
+                    </td>
+                    <td>
+                      <img
+                        src="./Assets/veg-icon.svg"
+                        alt="nonveg-icon"
+                        class="item-type"
+                      />
+                    </td>
+                    <td>100</td>
+                    <td>1</td>
+                    <td>
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckDefault"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-4 align-items-center">
+                        <div class="d-flex gap-4 align-items-center">
+                          <i class="fa-solid fa-pen-clip"></i>
+                          <button
+                            type="button"
+                            class="border-0 outline-0 bg-light p-0"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                          >
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-secondary" id="exampleModalLabel">
+                  Add Catagory
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div
+                class="row m-auto align-item-center justify-content-center col-md-9 my-4"
+              >
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput" class="mx-2">Name*</label>
+                </div>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea"
+                  ></textarea>
+                  <label for="floatingTextarea" class="mx-2">Description</label>
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <div class="d-flex justify-content-end gap-3">
+                  <button
+                    type="submit"
+                    class="border-0 px-3 fill-btn rounded shadow"
+                  >
+                    Save
+                  </button>
+                  <button class="border-btn" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
