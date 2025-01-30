@@ -36,3 +36,9 @@
 a {
   text-decoration: none;
 }
+
+.fill-btn {
+  background-color: #006098;
+  color: white;
+  border-radius: 3px;
+}

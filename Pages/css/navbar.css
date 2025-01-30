@@ -1,5 +1,13 @@
+.brand-name-nav {
+  color: white;
+}
+
 .brand-name {
-  color: #4e7e9a;
+  color: #006098;
+}
+
+.close-btn {
+  margin-left: 10px;
 }
 
 .pizza-logo {
@@ -21,7 +29,7 @@
   min-height: fit-content;
   background-color: #fff;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   /* z-index: 1500; */
   height: 100vh;
 }
@@ -46,57 +54,35 @@
   color: black;
 }
 
-/* @media (max-width: 868px) {
-  .sidebar {
-    position: fixed;
-    transform: translateX(-100%);
-    min-height: fit-content;
-    width: 230px;
-    height: 100vh;
-    z-index: 4;
-  } */
-
-/* .sidebar.show {
-  transform: translateX(0);
-  height: 100vh;
-  z-index: 1031;
-  width: 230px;
-} */
-
-/* .main-content {
-    margin-left: 0;
-    width: 100%;
-  } */
-/* } */
-
 #toggle-btn {
   height: 30px;
   width: 30px;
 }
 
-/* @media (max-width: 868px) {
+@media (max-width: 989px) {
   .sidebar {
     position: fixed;
     transform: translateX(-100%);
     min-height: fit-content;
-    width: 230px;
+    /* width: 230px; */
     height: 100vh;
-    z-index: 4;
   }
 
-  .sidebar.showing {
+  .sidebar.show {
     transform: translateX(0);
     height: 100vh;
-    z-index: 4;
-    width: 230px;
+    z-index: 5000;
+    /* width: 230px; */
   }
 
-  .content {
+  .main-content {
     margin-left: 0;
     width: 100%;
   }
+}
 
-  .search-form {
+@media (min-width: 989) {
+  .close-btn {
     display: none;
   }
 }
@@ -108,20 +94,43 @@
     width: 230px;
     height: 100vh;
     z-index: 2000;
+    /* margin-top: 60px; */
   }
 
   .sidebar.show {
     height: 100vh;
-    z-index: 4;
     width: 230px;
   }
 
-  .content {
+  .main-content {
     margin-left: 230px;
     width: 70%;
   }
+}
 
-  .graph-img {
-    height: 300px;
+@media (min-width: 1024px) {
+  .sidebar {
+    position: fixed;
+    min-height: fit-content;
+    width: 230px;
+    height: 100vh;
+    z-index: 2000;
   }
-} */
+
+  /* .sidebar.show {
+    height: 100vh;
+    width: 230px;
+  } */
+
+  /* .content {
+    margin-left: 230px;
+    width: 70%;
+  } */
+  .close-btn {
+    display: none;
+  }
+}
+
+.offcanvas-lg.offcanvas-start {
+  width: 230px;
+}

@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-    <main class="container-fluid">
+    <main class="container-fluid h-full">
       <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-9 mt-5">
@@ -40,10 +40,12 @@
                   </button>
                 </div>
               </div>
-              <button class="border-0 p-3 fill-btn rounded shadow">
-                <i class="fa-solid fa-plus"></i>
-                Add User
-              </button>
+              <a href="./create-user.html">
+                <button class="border-0 p-3 fill-btn rounded shadow">
+                  <i class="fa-solid fa-plus"></i>
+                  Add User
+                </button>
+              </a>
             </div>
           </div>
           <!-- Modal -->
@@ -192,6 +194,32 @@
                 </tr>
               </tbody>
             </table>
+            <div
+              class="d-flex flex-row justify-content-end align-item-center mt-4"
+            >
+              <form
+                action=""
+                class="col-md-9 d-flex flex-row justify-content-end align-item-center"
+              >
+                <label for="form-select" class="mx-2">Items per Page</label>
+                <select
+                  class="form-select w-auto"
+                  id="Select"
+                  aria-label="Role"
+                >
+                  <option value="1">5</option>
+                  <option value="2">10</option>
+                  <option value="3">15</option>
+                </select>
+                Showing 1-2 of 2
+                <button class="bg-llight border-1 bg-light mx-2 px-2">
+                  <i class="fa-solid fa-less-than"></i>
+                </button>
+                <button class="bg-llight border-1 bg-light px-2">
+                  <i class="fa-solid fa-greater-than"></i>
+                </button>
+              </form>
+            </div>
           </div>
           <!-- Modal -->
           <div
@@ -201,7 +229,7 @@
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">

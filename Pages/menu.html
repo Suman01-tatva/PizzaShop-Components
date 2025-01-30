@@ -62,9 +62,11 @@
               </div>
             </nav>
           </section>
-          <div class="row border shadow rounded">
+          <div
+            class="row border shadow rounded d-flex align-item-center justify-content-center"
+          >
             <section
-              class="col-md-3 col-lg-2 menu-section px-0 border-right rounded px-1 mt-2"
+              class="col-md-3 col-lg-2 menu-section px-0 border-right rounded px-3 mt-2"
             >
               <div class="d-flex flex-wrap justify-content-between mt-3">
                 <h4 class="heading">Catagory</h4>
@@ -135,7 +137,7 @@
               </ul>
             </section>
             <section
-              class="col-md-9 col-lg-10 rounded p-3 shadow mt-2 table-responsive"
+              class="col-md-9 col-lg-10 rounded p-3 mt-2 table-responsive"
             >
               <h2 class="heading">Items</h2>
               <div class="d-flex justify-content-end gap-2">
@@ -174,37 +176,53 @@
                       <input type="checkbox" value="" id="" />
                       <span class="mx-2">Name</span>
                     </th>
-                    <th scope="col">Item Type</th>
-                    <th scope="col">Rate</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">Available</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">
+                      <div
+                        class="d-flex align-item-center justify-content-center"
+                      >
+                        Item Type
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="d-flex justify-content-center">Rate</div>
+                    </th>
+                    <th scope="col">
+                      <div class="d-flex justify-content-center">Quantity</div>
+                    </th>
+                    <th scope="col">
+                      <div class="d-flex justify-content-center">Available</div>
+                    </th>
+                    <th scope="col">
+                      <div class="d-flex justify-content-center">Action</div>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
                       <input type="checkbox" />
-                      <!-- <div class="d-flex gap-2 align-items-center"> -->
                       <img
                         src="./Assets/dining-menu.png"
                         alt="user profile img"
                         class="dining-menu-img mx-2"
                       />
                       <span>Panjabi Tadka Sandwich</span>
-                      <!-- </div> -->
                     </td>
                     <td>
-                      <img
-                        src="./Assets/non-veg-icon.svg"
-                        alt="nonveg-icon"
-                        class="item-type"
-                      />
+                      <div class="d-flex justify-content-center">
+                        <img
+                          src="./Assets/non-veg-icon.svg"
+                          alt="nonveg-icon"
+                          class="item-type"
+                        />
+                      </div>
                     </td>
-                    <td>200</td>
-                    <td>1</td>
                     <td>
-                      <div class="form-check form-switch">
+                      <div class="d-flex justify-content-center">200</div>
+                    </td>
+                    <td><div class="d-flex justify-content-center">1</div></td>
+                    <td>
+                      <div class="d-flex justify-content-center form-switch">
                         <input
                           class="form-check-input"
                           type="checkbox"
@@ -214,14 +232,16 @@
                       </div>
                     </td>
                     <td>
-                      <div class="d-flex gap-4 align-items-center">
+                      <div
+                        class="d-flex gap-4 align-items-center justify-content-center"
+                      >
                         <div class="d-flex gap-4 align-items-center">
                           <i class="fa-solid fa-pen-clip"></i>
                           <button
                             type="button"
                             class="border-0 outline-0 bg-light p-0"
                             data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
+                            data-bs-target="#exampleModal2"
                           >
                             <i class="fa-solid fa-trash-can"></i>
                           </button>
@@ -232,26 +252,28 @@
                   <tr>
                     <td>
                       <input type="checkbox" />
-                      <!-- <div class="d-flex gap-2 align-items-center"> -->
                       <img
                         src="./Assets/dining-menu.png"
                         alt="user profile img"
                         class="dining-menu-img mx-2"
                       />
-                      <span>Chinies Sandwich</span>
-                      <!-- </div> -->
+                      <span>Panjabi Tadka Sandwich</span>
                     </td>
                     <td>
-                      <img
-                        src="./Assets/veg-icon.svg"
-                        alt="nonveg-icon"
-                        class="item-type"
-                      />
+                      <div class="d-flex justify-content-center">
+                        <img
+                          src="./Assets/veg-icon.svg"
+                          alt="nonveg-icon"
+                          class="item-type"
+                        />
+                      </div>
                     </td>
-                    <td>100</td>
-                    <td>1</td>
                     <td>
-                      <div class="form-check form-switch">
+                      <div class="d-flex justify-content-center">200</div>
+                    </td>
+                    <td><div class="d-flex justify-content-center">1</div></td>
+                    <td>
+                      <div class="d-flex justify-content-center form-switch">
                         <input
                           class="form-check-input"
                           type="checkbox"
@@ -261,14 +283,16 @@
                       </div>
                     </td>
                     <td>
-                      <div class="d-flex gap-4 align-items-center">
+                      <div
+                        class="d-flex gap-4 align-items-center justify-content-center"
+                      >
                         <div class="d-flex gap-4 align-items-center">
                           <i class="fa-solid fa-pen-clip"></i>
                           <button
                             type="button"
                             class="border-0 outline-0 bg-light p-0"
                             data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
+                            data-bs-target="#exampleModal2"
                           >
                             <i class="fa-solid fa-trash-can"></i>
                           </button>
@@ -279,26 +303,28 @@
                   <tr>
                     <td>
                       <input type="checkbox" />
-                      <!-- <div class="d-flex gap-2 align-items-center"> -->
                       <img
                         src="./Assets/dining-menu.png"
                         alt="user profile img"
                         class="dining-menu-img mx-2"
                       />
-                      <span>Chinies Sandwich</span>
-                      <!-- </div> -->
+                      <span>Panjabi Tadka Sandwich</span>
                     </td>
                     <td>
-                      <img
-                        src="./Assets/veg-icon.svg"
-                        alt="nonveg-icon"
-                        class="item-type"
-                      />
+                      <div class="d-flex justify-content-center">
+                        <img
+                          src="./Assets/veg-icon.svg"
+                          alt="nonveg-icon"
+                          class="item-type"
+                        />
+                      </div>
                     </td>
-                    <td>100</td>
-                    <td>1</td>
                     <td>
-                      <div class="form-check form-switch">
+                      <div class="d-flex justify-content-center">200</div>
+                    </td>
+                    <td><div class="d-flex justify-content-center">1</div></td>
+                    <td>
+                      <div class="d-flex justify-content-center form-switch">
                         <input
                           class="form-check-input"
                           type="checkbox"
@@ -308,61 +334,16 @@
                       </div>
                     </td>
                     <td>
-                      <div class="d-flex gap-4 align-items-center">
+                      <div
+                        class="d-flex gap-4 align-items-center justify-content-center"
+                      >
                         <div class="d-flex gap-4 align-items-center">
                           <i class="fa-solid fa-pen-clip"></i>
                           <button
                             type="button"
                             class="border-0 outline-0 bg-light p-0"
                             data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
-                          >
-                            <i class="fa-solid fa-trash-can"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input type="checkbox" />
-                      <!-- <div class="d-flex gap-2 align-items-center"> -->
-                      <img
-                        src="./Assets/dining-menu.png"
-                        alt="user profile img"
-                        class="dining-menu-img mx-2"
-                      />
-                      <span>Chinies Sandwich</span>
-                      <!-- </div> -->
-                    </td>
-                    <td>
-                      <img
-                        src="./Assets/veg-icon.svg"
-                        alt="nonveg-icon"
-                        class="item-type"
-                      />
-                    </td>
-                    <td>100</td>
-                    <td>1</td>
-                    <td>
-                      <div class="form-check form-switch">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          role="switch"
-                          id="flexSwitchCheckDefault"
-                        />
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex gap-4 align-items-center">
-                        <div class="d-flex gap-4 align-items-center">
-                          <i class="fa-solid fa-pen-clip"></i>
-                          <button
-                            type="button"
-                            class="border-0 outline-0 bg-light p-0"
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
+                            data-bs-target="#exampleModal2"
                           >
                             <i class="fa-solid fa-trash-can"></i>
                           </button>
@@ -372,6 +353,32 @@
                   </tr>
                 </tbody>
               </table>
+              <div
+                class="d-flex flex-row justify-content-end align-item-center mt-4"
+              >
+                <form
+                  action=""
+                  class="col-md-9 d-flex flex-row justify-content-end align-item-center"
+                >
+                  <label for="form-select" class="mx-2">Items per Page</label>
+                  <select
+                    class="form-select w-auto"
+                    id="Select"
+                    aria-label="Role"
+                  >
+                    <option value="1">5</option>
+                    <option value="2">10</option>
+                    <option value="3">15</option>
+                  </select>
+                  Showing 1-2 of 2
+                  <button class="bg-llight border-1 bg-light mx-2 px-2">
+                    <i class="fa-solid fa-less-than"></i>
+                  </button>
+                  <button class="bg-llight border-1 bg-light px-2">
+                    <i class="fa-solid fa-greater-than"></i>
+                  </button>
+                </form>
+              </div>
             </section>
           </div>
         </div>
@@ -384,7 +391,7 @@
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title text-secondary" id="exampleModalLabel">
@@ -417,6 +424,54 @@
                   ></textarea>
                   <label for="floatingTextarea" class="mx-2">Description</label>
                 </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <div class="d-flex justify-content-end gap-3">
+                  <button
+                    type="submit"
+                    class="border-0 px-3 fill-btn rounded shadow"
+                  >
+                    Save
+                  </button>
+                  <button class="border-btn" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 2 -->
+        <div
+          class="modal fade"
+          id="exampleModal2"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel2"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-secondary" id="exampleModalLabel">
+                  Delete Confirmation
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div
+                class="d-flex justify-content-center align-item-center mt-5 mb-3"
+              >
+                <i
+                  class="fa-solid fa-triangle-exclamation fa-2xl"
+                  style="color: #ffd43b"
+                ></i>
+              </div>
+              <div class="modal-body d-flex justify-content-center">
+                Are You sure you want to delete this Item ?
               </div>
               <div class="modal-footer d-flex justify-content-center">
                 <div class="d-flex justify-content-end gap-3">

@@ -19,6 +19,51 @@
     <main class="container-fluid">
       <div class="row">
         <!-- Sidebar -->
+        <div class="offcanvas-lg offcanvas-start col-md-3 bg-light col-lg-2 sidebar" id="sidebar">
+          <div
+                class="d-flex flex-row justify-content-center align-item-center mt-2 fs-3"
+              >
+                <img
+                  src="./Assets/pizzashop_logo.png"
+                  alt="pizashop-logo"
+                  class="img-fliud pizza-logo"
+                />
+                <div class="brand-name fs-5 mt-2"><b>PIZZASHOP</b></div>
+                <button class="btn btn-close close-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasWithBothOptions">
+                </button>
+              </div>
+          <ul
+          class="nav d-flex justify-content-between align-items-left mx-3 flex-column"
+        >
+        <li class="nav-item mt-3 text-danger sidebar-active cursor-pointer">
+          <i class="fa-solid fa-table-cells-large me-2"></i>
+          Dashboard
+        </li>
+        </a>
+        <a href="/innerpage.html">
+        <li class="nav-item mt-3">
+          <i class="fa-solid fa-users me-2"></i> Analysis
+        </li>
+        </a>
+        <li class="nav-item mt-3">
+          <i class="fa-solid fa-monument me-2"></i>Inbox
+        </li>
+        <li class="nav-item mt-3">
+          <i class="fa-solid fa-square"></i> History
+        </li>
+        <li class="nav-item mt-3">
+          <i class="fa-solid fa-money-check-dollar"></i> Users
+        </li>
+        <li class="nav-item mt-3">
+          <i class="fa-solid fa-cart-plus"></i>
+
+          Maintenance
+        </li>
+        <li class="nav-item mt-3">
+          <i class="fa-solid fa-users-rectangle"></i> Setting
+        </li>
+        </ul>
+        </div>
         <!-- <div class="col-md-3 col-sm-4 col-lg-2 sidebar z-4" id="sidebar">
           <ul
             class="nav d-flex justify-content-between align-items-left mx-3 flex-column"
@@ -65,7 +110,7 @@
           </ul>
         </div> -->
 
-        <aside class="col-lg-2 sidebar" id="sidebar">
+        <!-- <aside class="col-lg-2 sidebar" id="sidebar">
           <div
             class="offcanvas-lg offcanvas-start"
             data-bs-backdrop="false"
@@ -96,25 +141,25 @@
                   <div class="brand-name fs-5 mt-2"><b>PIZZASHOP</b></div>
                 </div>
                 <li class="list-item align-items-center border-0 active-menu">
-                  <!-- <a href="/dashboard.html" class="nav-link"> -->
-                  <!-- <img src="images/dashboard-active.svg" alt="dashboard" class="me-2"> -->
+                  <a href="/dashboard.html" class="nav-link">
+                  <img src="images/dashboard-active.svg" alt="dashboard" class="me-2">
                   <span>
                     <i class="fa-solid fa-table-cells-large me-2"></i>
                   </span>
                   Dashboard
-                  <!-- </a> -->
+                  </a>
                 </li>
                 <li class="list-item d-flex align-items-center border-0">
-                  <!-- <a href="/innerpage.html" class="nav-link"> -->
-                  <!-- <img src="images/graph-default.svg" alt="12" class="me-2"> -->
+                  <a href="/innerpage.html" class="nav-link">
+                  <img src="images/graph-default.svg" alt="12" class="me-2">
                   <span>
                     <i class="fa-solid fa-users"></i>
                   </span>
                   Users
-                  <!-- </a> -->
+                  </a>
                 </li>
                 <li class="list-item d-flex align-items-center border-0">
-                  <!-- <img src="images/inbox-default.svg" alt="12" class="me-2"> -->
+                  <img src="images/inbox-default.svg" alt="12" class="me-2">
                   <a href="#" class="nav-link">
                     <span>
                       <i class="fa-solid fa-monument"></i>
@@ -123,7 +168,7 @@
                   </a>
                 </li>
                 <li class="list-item d-flex align-items-center border-0">
-                  <!-- <img src="images/clock-default.svg" alt="12" class="me-2"> -->
+                  <img src="images/clock-default.svg" alt="12" class="me-2">
                   <a href="#" class="nav-link">
                     <span>
                       <i class="fa-solid fa-square"></i>
@@ -132,7 +177,7 @@
                   </a>
                 </li>
                 <li class="list-item d-flex align-items-center border-0">
-                  <!-- <img src="images/user-default.svg" alt="12" class="me-2"> -->
+                  <img src="images/user-default.svg" alt="12" class="me-2">
                   <a href="#" class="nav-link">
                     <span>
                       <i class="fa-solid fa-money-check-dollar"></i>
@@ -141,7 +186,7 @@
                   </a>
                 </li>
                 <li class="list-item d-flex align-items-center border-0">
-                  <!-- <img src="images/maintenance-default.svg" alt="12" class="me-2"> -->
+                  <img src="images/maintenance-default.svg" alt="12" class="me-2">
                   <a href="#" class="nav-link">
                     <span>
                       <i class="fa-solid fa-cart-plus"></i>
@@ -150,7 +195,7 @@
                   </a>
                 </li>
                 <li class="list-item d-flex align-items-center border-0">
-                  <!-- <img src="images/setting-default.svg" alt="12" class="me-2"> -->
+                  <img src="images/setting-default.svg" alt="12" class="me-2">
                   <a href="#" class="nav-link">
                     <span>
                       <i class="fa-solid fa-users-rectangle"></i>
@@ -161,39 +206,29 @@
               </ul>
             </div>
           </div>
-        </aside>
+        </aside> -->
 
         <div class="main-content col-md-9 col-lg-10">
           <!-- navbar -->
           <nav
             class="navbar navbar-expand-lg d-flex justify-content-between align-item-center fixed-top py-0"
           >
-            <div class="d-flex bg-light my-0">
-              <button
-                class="btn menu-bar"
-                id="menu-bar"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasScrolling"
-                aria-controls="offcanvasScrolling"
-              >
-                <i class="fa-solid fa-bars" id="toggle-btn"></i>
-              </button>
+            <div class="d-flex my-0">
               <div
                 class="d-flex flex-row justify-content-center align-item-center mt-2 fs-3"
               >
+                <!-- <button class="border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasWithBothOptions"> -->
+                  <img src="./Assets/menu-bar.svg" alt="toggle-btn" class="mx-2" id="menu-icon" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasWithBothOptions">
+                <!-- </button> -->
                 <img
                   src="./Assets/pizzashop_logo.png"
                   alt="pizashop-logo"
                   class="img-fliud pizza-logo"
                 />
-                <div class="brand-name fs-5 mt-2"><b>PIZZASHOP</b></div>
+                <div class="brand-name-nav fs-5 mt-2"><b>PIZZASHOP</b></div>
               </div>
             </div>
 
-            <!-- <div class="mx-3">
-              <i class="fa-solid fa-bars" id="toggle-btn"></i>
-            </div> -->
             <div class="d-md-flex mx-3">
               <img
                 src="/Pages/Assets/Default_pfp.svg.png"
@@ -206,6 +241,6 @@
       </div>
     </main>
     <script src="/Pages/js/bootstrap.bundle.js"></script>
-    <script src="/Pages/js/navbar.js"></script>
+    <script src="./js/navbar.js"></script>
   </body>
 </html>
