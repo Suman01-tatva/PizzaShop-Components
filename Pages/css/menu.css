@@ -61,7 +61,7 @@ input[type="checkbox"] {
 
 #nav-tab button {
   color: black;
-  text-decoration: black;
+  text-decoration: #006098;
 }
 
 #nav-tab button:focus {
@@ -76,4 +76,11 @@ input[type="checkbox"] {
 
 .page-count {
   width: 40px;
+}
+
+.search-icon {
+  position: absolute;
+  margin-left: -40px;
+  z-index: 2;
+  margin-bottom: 15px;
 }
